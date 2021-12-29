@@ -1,0 +1,5 @@
+FROM openjdk:16
+COPY ./stub-1.0.0-SNAPSHOT.jar ./stub.jar
+COPY ./stub.properties ./src/main/resources/application.properties
+EXPOSE 8080
+CMD java -jar stub.jar

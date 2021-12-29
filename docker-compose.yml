@@ -1,0 +1,30 @@
+version: '3.1'
+services:
+
+  input:
+    build:
+      context: .
+      dockerfile: dockerfile_inputQueue
+
+  output:
+    build:
+      context: .
+      dockerfile: dockerfile_inputQueue
+
+  stub:
+    build:
+      context: .
+      dockerfile: dockerfile_stub
+    depends_on:
+      - input
+      - output
+
+  controller:
+    build:
+      context: .
+      dockerfile: dockerfile_controller
+    depends_on:
+      - input
+      - output
+      - stub
+

@@ -1,0 +1,4 @@
+{
+  "requestToInputQueue": "http://input:8080/putRequest",
+  "requestToOutputQueue": "http://output:8080/getResponse"
+}

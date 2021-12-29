@@ -1,0 +1,4 @@
+FROM openjdk:16
+COPY ./queue-1.0.0-SNAPSHOT.jar ./queue.jar
+EXPOSE 8080
+CMD java -jar queue.jar

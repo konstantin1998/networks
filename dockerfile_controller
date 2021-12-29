@@ -1,0 +1,6 @@
+FROM openjdk:16
+COPY ./controller-1.0.0-SNAPSHOT.jar ./controller.jar
+COPY ./loadConfig.json ./loadConfig.json
+COPY ./appConfig.json ./appConfig.json
+EXPOSE 8080
+CMD java -jar controller.jar appConfig.json loadConfig.json
