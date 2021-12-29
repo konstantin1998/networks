@@ -14,5 +14,8 @@
 Для запуска приложения надо в текущей директории набрать команду 'docker-compose up' .
 Посмотреть исходный код, на основе которого были сгенерированы jar - файлы можно в следующих репозиториях.
 
-https://github.com/konstantin1998/queue
-https://github.com/konstantin1998/controller
+https://github.com/konstantin1998/queue  (input, output)
+
+https://github.com/konstantin1998/controller (controller)
+
+https://github.com/konstantin1998/stub  (stub)
