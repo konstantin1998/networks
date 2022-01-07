@@ -1,1 +1,1 @@
-{"rate":4,"expirationTimeout":60,"duration":20}
+{"rate":20,"expirationTimeout":180,"duration":20, "trafficThreshold": 5000}
